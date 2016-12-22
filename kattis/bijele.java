@@ -9,8 +9,11 @@ public class bijele {
       int c = input.nextInt();
       num[i] = c;
     }
-    for (int g :num ) {
-      System.out.println(g);
+    for (int j = 0;j < num.length ;j++ ) {
+      if num[j]==klar[j]{
+        
+      }
+
     }
   }
 }
