@@ -3,29 +3,35 @@ import java.lang.*;
 import java.io.*;
 
 public class exampel{
-
-  public static int search(int arr[], int n, int x){
-    for (int i = 0; i < n ;i++ ) {
-      if(arr[i]==x){
-        arr[i]= i;
-      }else{
-        arr[i] = -1;
-      }
-    }
-    return arr
-  }
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int[] arr = new int[100];
-    int t = input.nextInt();
-    while ( t > 0) {
-      int n = input.nextInt();
-      for (int i = 0; i < n ;i++ ) {
-        arr[i] = input.nextInt();
+    String a = input.next();
+    String b = input.next();
+    int counter = 0;
+    char[] krypchar = a.toCharArray();
+    char[] klarchar = b.toCharArray();
+    int diff = krypchar.length - klarchar.length;
+    int resultat[] = new int[diff+1];
+    for (int i = 1; i <= diff ;i++ ) {
+      for (int j = 0; j < klarchar.length ;j++ ) {
+        if (klarchar[j]!=krypchar[j]) {
+          resultat[i]=
+        }else{
+          counter =0;
+        }
+        
+
       }
-      int x = input.nextInt();
-      System.out.println(search(arr, n, x));
-      t--;
+      resultat[i]= counter;
+
+      }
+      for (int c :resultat ) {
+        System.out.println(c);
+
+      }
     }
-  }
+
+
+
+
 }
